@@ -1,0 +1,42 @@
+{
+  "name": "@phonophant/plugin-pilet",
+  "version": "1.0.0",
+  "description": "Provides a webpage (pilet) for managing plugins.",
+  "keywords": [
+    "pilet"
+  ],
+  "devDependencies": {
+    "@phonophant/piral": "file:..\\audiobear\\packages\\core\\piral\\dist\\emulator\\phonophant-piral-1.0.0.tgz",
+    "@phonophant/shared-models": "1.0.0",
+    "@types/node": "latest",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "piral-cli": "0.15.2",
+    "piral-cli-webpack5": "0.15.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-router": "5.3.4",
+    "react-router-dom": "5.3.4",
+    "tslib": "2.4.1",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "start": "pilet debug",
+    "build": "pilet build --target ./dist/index.js ./src/index.tsx",
+    "upgrade": "pilet upgrade"
+  },
+  "phonoplugin": {
+    "piletLocation": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "source": "src/index.tsx",
+  "importmap": {
+    "imports": {},
+    "inherit": [
+      "@phonophant/piral"
+    ]
+  }
+}
