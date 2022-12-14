@@ -1,12 +1,12 @@
 {
   "name": "@phonophant/plugin-pilet",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Provides a webpage (pilet) for managing plugins.",
   "keywords": [
     "pilet"
   ],
   "devDependencies": {
-    "@phonophant/piral": "file:..\\audiobear\\packages\\core\\piral\\dist\\emulator\\phonophant-piral-1.0.0.tgz",
+    "@phonophant/piral-emulator": "1.0.0",
     "@phonophant/shared-models": "1.0.0",
     "@types/node": "latest",
     "@types/react": "^18",
@@ -24,7 +24,8 @@
   "scripts": {
     "start": "pilet debug",
     "build": "pilet build --target ./dist/index.js ./src/index.tsx",
-    "upgrade": "pilet upgrade"
+    "upgrade": "pilet upgrade",
+    "npm:publish": "npm publish --access public"
   },
   "phonoplugin": {
     "piletLocation": "dist"

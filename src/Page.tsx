@@ -59,7 +59,7 @@ export default () => {
     const getData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/plugins`
+          `http://localhost:3000/plugins/installed`
         );
         if (!response.ok) {
           throw new Error(
